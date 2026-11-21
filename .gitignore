@@ -1,0 +1,41 @@
+# Build output
+/build/
+/out/
+/dist/
+/target/
+/cmake-build-*/
+/.gradle/
+/.idea/
+/.vscode/
+
+# Qt and CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+*.user
+*.qmlc
+*.jsc
+
+# Android
+local.properties
+**/.cxx/
+**/.externalNativeBuild/
+
+# Local data
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.log
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+secrets/
