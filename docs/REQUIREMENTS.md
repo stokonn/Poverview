@@ -33,17 +33,21 @@ Scope labels: **MVP** means required for the first useful release; **Later** mea
 ## Android companion
 
 - **MVP** Pair with a desktop instance using an authenticated flow.
-- **MVP** Display synchronized projects, details, and recent activity.
-- **MVP** Cache received data for offline reading.
+- **MVP** Display synchronized projects, details, recent activity, and Resume Points.
+- **MVP** Cache synchronized data for offline use.
+- **MVP** Allow edits to supported project metadata, notes, and Resume Points.
+- **MVP** Queue offline edits and synchronize them when the desktop is reachable again.
 - **MVP** Display last successful sync and connection state.
-- **MVP** Remain read-only: no repository edits, command execution, or remote control.
+- **MVP** Never edit desktop repository files, execute local commands, or provide remote-control functionality.
 - **Later** Add notification summaries within Android background-execution limits.
 
 ## Synchronization and networking
 
 - **MVP** Synchronize over a trusted local network while the desktop host is running.
 - **MVP** Authenticate each paired device independently and encrypt traffic.
-- **MVP** Support incremental sync with stable event identifiers and cursors.
+- **MVP** Support bidirectional incremental sync with stable event identifiers and cursors.
+- **MVP** Preserve supported edits made on either device, including while offline.
+- **MVP** Detect and safely resolve or surface conflicting edits; never silently discard changes.
 - **MVP** Recover from interrupted connections without silently losing events.
 - **MVP** Show host availability and stale mobile data clearly.
 - **Later** Document user-managed VPN access outside the LAN.
