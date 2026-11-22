@@ -36,11 +36,16 @@ Poverview aims to bring together information that is otherwise scattered across 
 
 ## Documentation
 
+Start with the [documentation index](docs/README.md) for an overview of the project's product, technical, and contributor documentation.
+
+Key documents:
+
 - [Product vision](docs/VISION.md)
 - [Requirements](docs/REQUIREMENTS.md)
 - [Architecture](docs/ARCHITECTURE.md)
 - [Roadmap](docs/ROADMAP.md)
 - [Architecture decision records](docs/decisions/)
+- [Release process](docs/RELEASING.md)
 
 ## Development status
 
