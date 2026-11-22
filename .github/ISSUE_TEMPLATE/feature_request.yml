@@ -1,0 +1,35 @@
+name: Feature request
+description: Propose a focused product or documentation improvement.
+title: "feature: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: "For major scope or architecture changes, start a discussion before implementation. Do not include private data or credentials."
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: What user problem should this solve?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the desired outcome without assuming a specific implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+    validations:
+      required: false
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Relevant constraints
+      description: Consider local-first behavior, privacy, desktop ownership, and the read-only Android companion.
+    validations:
+      required: false

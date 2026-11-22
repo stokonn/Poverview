@@ -1,0 +1,49 @@
+name: Bug report
+description: Report a reproducible problem in Poverview or its project documentation.
+title: "bug: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Please search existing issues first. Do not include credentials, private repository contents, or personal information."
+  - type: input
+    id: area
+    attributes:
+      label: Affected area
+      description: Desktop, Android, synchronization, documentation, or another area.
+      placeholder: Documentation
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Problem summary
+      description: What is wrong?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Provide the smallest reliable set of steps. For documentation issues, include the file and section.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and sanitized logs
+      description: Include relevant versions and logs after removing secrets and personal data.
+    validations:
+      required: false
