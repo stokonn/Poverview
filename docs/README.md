@@ -6,7 +6,8 @@ This index is the entry point for Poverview's product, architecture, planning, a
 
 | Document | Purpose |
 | --- | --- |
-| [Product vision](VISION.md) | Problem statement, product shape, principles, audience, non-goals, and success criteria |
+| [Product philosophy](PRODUCT_PHILOSOPHY.md) | Confirmed product decisions, core problem, Resume Point, local-first principles, boundaries, and open questions |
+| [Product vision](VISION.md) | Product definition, experience, audience, scope, and success criteria |
 | [Product requirements](REQUIREMENTS.md) | Planned desktop, Android, synchronization, privacy, and quality requirements |
 
 ## Technical direction
@@ -16,7 +17,7 @@ This index is the entry point for Poverview's product, architecture, planning, a
 | [Architecture](ARCHITECTURE.md) | Proposed system boundaries, data flow, synchronization, security, and open technical questions |
 | [ADR 0001: Initial technology direction](decisions/0001-initial-technology-direction.md) | Current proposed desktop, Android, storage, and protocol choices |
 
-Architecture documents describe proposals unless a decision record explicitly says otherwise. A proposed technology or design must not be treated as implemented or accepted merely because it is documented.
+Architecture documents describe proposals unless a decision record explicitly says otherwise. The product philosophy records the current confirmed product direction; older technical proposals must be reconciled with it before implementation.
 
 ## Planning and delivery
 
