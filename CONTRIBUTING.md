@@ -73,7 +73,7 @@ Release versioning, tags, prereleases, and the release checklist are defined in 
 
 ## Security
 
-Never report vulnerabilities in public issues. Follow the private reporting guidance in [SECURITY.md](SECURITY.md) when that file is added. Until then, contact the repository owner privately through GitHub.
+Never report vulnerabilities in public issues. Follow the private reporting guidance in [SECURITY.md](SECURITY.md).
 
 ## License
 

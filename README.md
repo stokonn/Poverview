@@ -44,7 +44,7 @@ Key documents:
 - [Requirements](docs/REQUIREMENTS.md)
 - [Architecture](docs/ARCHITECTURE.md)
 - [Roadmap](docs/ROADMAP.md)
-- [Architecture decision records](docs/decisions/)
+- [Initial technology direction (ADR 0001)](docs/decisions/0001-initial-technology-direction.md)
 - [Release process](docs/RELEASING.md)
 - [Contributing](CONTRIBUTING.md)
 - [Security policy](SECURITY.md)

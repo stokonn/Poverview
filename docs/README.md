@@ -14,7 +14,7 @@ This index is the entry point for Poverview's product, architecture, planning, a
 | Document | Purpose |
 | --- | --- |
 | [Architecture](ARCHITECTURE.md) | Proposed system boundaries, data flow, synchronization, security, and open technical questions |
-| [Architecture decisions](decisions/) | Decision records, including their current status and rationale |
+| [ADR 0001: Initial technology direction](decisions/0001-initial-technology-direction.md) | Current proposed desktop, Android, storage, and protocol choices |
 
 Architecture documents describe proposals unless a decision record explicitly says otherwise. A proposed technology or design must not be treated as implemented or accepted merely because it is documented.
 
