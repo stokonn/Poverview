@@ -46,6 +46,8 @@ Key documents:
 - [Roadmap](docs/ROADMAP.md)
 - [Architecture decision records](docs/decisions/)
 - [Release process](docs/RELEASING.md)
+- [Contributing](CONTRIBUTING.md)
+- [Security policy](SECURITY.md)
 
 ## Development status
 

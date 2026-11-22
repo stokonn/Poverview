@@ -1,17 +1,21 @@
 # Roadmap
 
-Milestones are goals, not date commitments. Scope may change as technical risks are tested.
+Milestones are goals, not date commitments. Scope may change as technical risks are tested. A checked item means the corresponding repository or product work is actually complete; it does not imply that future application functionality exists.
 
 ## 0. Foundation
+
 - [x] Create the public repository and initial project documentation.
 - [ ] Select and document the project license.
-- [ ] Finalize initial architecture decisions.
-- [ ] Define contribution, issue, and release conventions.
-- [ ] Set up baseline CI and repository quality checks.
+- [ ] Finalize initial architecture decisions after reviewing the proposed ADR and relevant technical risks.
+- [x] Define contribution conventions in `CONTRIBUTING.md`.
+- [x] Define issue conventions and provide GitHub issue templates.
+- [x] Define release and versioning conventions in `docs/RELEASING.md`.
+- [ ] Set up baseline CI and repository quality checks appropriate to the implementation languages.
 
-**Exit criteria:** clear product scope and a repository ready for implementation.
+**Exit criteria:** product scope is clear, key project policies are documented, architecture decisions are explicit, and the repository is ready for implementation.
 
 ## 1. Desktop MVP
+
 - [ ] Create the Qt 6 desktop application skeleton.
 - [ ] Add and persist local Git repositories.
 - [ ] Collect branch, working-tree, and recent-commit information.
@@ -22,6 +26,7 @@ Milestones are goals, not date commitments. Scope may change as technical risks 
 **Exit criteria:** monitor several local repositories without GitHub.
 
 ## 2. GitHub integration
+
 - [ ] Implement optional GitHub authentication.
 - [ ] Link local projects to GitHub repositories.
 - [ ] Display issues, pull requests, releases, and Actions activity.
@@ -30,6 +35,7 @@ Milestones are goals, not date commitments. Scope may change as technical risks 
 **Exit criteria:** local and hosted activity appears in a unified view.
 
 ## 3. Activity and insights
+
 - [ ] Build a normalized activity timeline.
 - [ ] Add explicit, user-configured build/test collection.
 - [ ] Add project statistics and filters.
@@ -38,6 +44,7 @@ Milestones are goals, not date commitments. Scope may change as technical risks 
 **Exit criteria:** desktop provides meaningful current project status.
 
 ## 4. Local synchronization
+
 - [ ] Implement the versioned protocol.
 - [ ] Add authenticated QR pairing and device revocation.
 - [ ] Implement HTTPS snapshots and incremental sync.
@@ -47,6 +54,7 @@ Milestones are goals, not date commitments. Scope may change as technical risks 
 **Exit criteria:** a paired device receives a consistent read-only view over the LAN.
 
 ## 5. Android companion
+
 - [ ] Create the Kotlin/Compose application.
 - [ ] Implement pairing and connection status.
 - [ ] Add Room-backed offline overview.
@@ -56,6 +64,7 @@ Milestones are goals, not date commitments. Scope may change as technical risks 
 **Exit criteria:** Android displays synchronized data reliably and remains useful offline.
 
 ## 6. Stabilization and first public release
+
 - [ ] Add packaging and installation guidance for supported Linux distributions.
 - [ ] Add Android release builds and update guidance.
 - [ ] Complete privacy, security, and migration reviews.

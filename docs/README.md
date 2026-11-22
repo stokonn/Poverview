@@ -25,11 +25,12 @@ Architecture documents describe proposals unless a decision record explicitly sa
 | [Roadmap](ROADMAP.md) | Milestones, current progress, and exit criteria |
 | [Release process](RELEASING.md) | Versioning, tags, prereleases, stable releases, and release checklist |
 
-## Contributing
+## Contributing and security
 
 | Document | Purpose |
 | --- | --- |
-| [Contributing guide](../CONTRIBUTING.md) | Change expectations, issue and pull request conventions, and repository workflow |
+| [Contributing guide](../CONTRIBUTING.md) | Change expectations, branch and commit conventions, issue and pull request workflow |
+| [Security policy](../SECURITY.md) | Private vulnerability reporting and security scope |
 
 ## Current project phase
 
