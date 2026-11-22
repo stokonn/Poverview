@@ -12,7 +12,7 @@ Milestones are goals, not date commitments. Scope may change as technical risks 
 - [x] Define release and versioning conventions in `docs/RELEASING.md`.
 - [ ] Set up baseline CI and repository quality checks appropriate to the implementation languages.
 
-**Exit criteria:** product scope is clear, key project policies are documented, architecture decisions are explicit, and the repository is ready for implementation.
+**Exit criteria:** product scope, project policies, architecture direction, and remaining open decisions are documented; the license and repository quality baseline are settled before implementation begins.
 
 ## 1. Desktop MVP
 
