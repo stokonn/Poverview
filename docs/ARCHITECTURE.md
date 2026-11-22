@@ -35,7 +35,7 @@ The desktop owns project configuration, collection scheduling, source integratio
 
 Collectors should normalize source-specific data into domain records rather than letting integration-specific structures leak into UI code.
 
-Android receives a limited read-only projection. It stores that projection in Room and should not need a live connection for every screen. It must not receive credentials that allow it to act as the desktop user on GitHub or execute local commands.
+Android receives a limited projection of project metadata and context, stores it in Room, and can edit supported records such as Resume Points and notes. It should not need a live connection for every screen. It must not receive credentials that allow it to act as the desktop user on GitHub or execute local commands.
 
 ## Data flow
 
@@ -44,8 +44,9 @@ Android receives a limited read-only projection. It stores that projection in Ro
 3. The adapter normalizes the result into domain records.
 4. The desktop persists records and provenance in SQLite.
 5. The sync layer publishes versioned changes to paired devices.
-6. Android validates and stores changes in Room.
-7. The UI reads the local cache and displays freshness.
+6. Android validates and stores changes in Room; supported user edits are recorded as outbound changes.
+7. When connected, both devices exchange changes and resolve or surface conflicts without silently discarding either side.
+8. The UI reads the local cache and displays freshness.
 
 ## Initial domain concepts
 
@@ -59,9 +60,9 @@ The protocol must be language-neutral and versioned from its first release.
 
 Each event should have a stable identifier, protocol version, event type, source identifier, occurrence and collection timestamps where applicable, and a documented payload.
 
-Support an initial snapshot followed by incremental updates using cursors. Clients must detect incompatible protocol versions and request a fresh snapshot when needed.
+Support an initial snapshot followed by incremental updates using cursors. Both desktop and Android may produce supported metadata changes. Changes need stable identifiers, ordering/version information, and conflict handling so an offline edit is not silently overwritten. Clients must detect incompatible protocol versions and request a fresh snapshot when needed.
 
-REST should support pairing, snapshots, cursor-based synchronization, and health checks. WebSocket may deliver updates while the desktop host is available.
+REST should support pairing, snapshots, cursor-based bidirectional synchronization, and health checks. WebSocket may deliver updates while the desktop host is available.
 
 ## Pairing and network security
 
@@ -78,7 +79,7 @@ Outside the local network, synchronization requires a user-managed secure networ
 
 ## Availability limits
 
-The desktop host must be running and reachable for live synchronization. Android background execution is constrained by the operating system; show last-sync time and do not promise immediate updates while the app is suspended.
+The desktop host must be running and reachable for synchronization with the primary workspace. Android remains usable from its local cache while disconnected. Android background execution is constrained by the operating system; show last-sync time and do not promise immediate updates while the app is suspended.
 
 ## Credentials and execution safety
 
